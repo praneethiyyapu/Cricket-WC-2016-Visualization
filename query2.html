@@ -54,33 +54,33 @@ body {
   top: 100%;
   left: 0;
 }
-	.btn{
+.btn{
 	position:relative;
 	top:30px;
-	left:130px;
-	margin-right:50px;
-}
+	left:60px;
+	margin-right:10px
+	}
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <body>
 <div>
-<a href="query1.html"><button type="button" class="btn btn-primary">Query1</button></a>
-<a href="query2.html"><button type="button" class="btn btn-primary">Query2</button></a>
-<a href="query3.html"><button type="button" class="btn btn-primary">Query3</button></a>
-<a href="query4.html"><button type="button" class="btn btn-primary">Query4</button></a>
-<a href="query5.html"><button type="button" class="btn btn-primary">Query5</button></a>
-<a href="query6.html"><button type="button" class="btn btn-primary">Query6</button></a>
-	<a href="query7.html"><button type="button" class="btn btn-primary">Query7</button></a>
-	<a href="query8.html"><button type="button" class="btn btn-primary">Query8</button></a>
-<br><br><br><br><br><br><br>
+<a href="query1.html"><button type="button" class="btn btn-primary">Popular Timezones</button></a>
+<a href="query2.html"><button type="button" class="btn btn-primary">Most tweeted languages</button></a>
+<a href="query3.html"><button type="button" class="btn btn-primary">IsSensitive?</button></a>
+<a href="query4.html"><button type="button" class="btn btn-primary">Popular unverified users</button></a>
+<a href="query5.html"><button type="button" class="btn btn-primary">Popular locations</button></a>
+<a href="query6.html"><button type="button" class="btn btn-primary">Most used devices</button></a>
+	<a href="query7.html"><button type="button" class="btn btn-primary">Tweets per day</button></a>
+	<a href="query8.html"><button type="button" class="btn btn-primary">Popular hashtags</button></a>
+<br><br><br><br>
 
 </div>
 <script src="script/d3.v3.min.js"></script>
 <script src="script/d3.tip.v0.6.3.js"></script>
 <script>
 
-var margin = {top: 40, right: 20, bottom: 30, left: 240},
-    width = 960 - margin.left - margin.right,
+var margin = {top: 40, right: 40, bottom: 30, left: 240},
+    width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var formatPercent = d3.format(".0");
@@ -129,8 +129,8 @@ d3.csv("csv/query2.csv", type, function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
+      .attr("y", 0)
+      .attr("dy", ".61em")
       .style("text-anchor", "end")
       .text("count");
 
