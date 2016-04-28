@@ -1,6 +1,6 @@
 ---
 applications:
 - buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  host: Cricket-WC-2016-Visualization-New
-  name: Cricket-WC-2016-Visualization
+  host: Cricket-WC-Visualization-New
+  name: Cricket-WC-Visualization
   memory: 64M
